@@ -14,6 +14,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* General */
 .button {
     display: inline-block;
@@ -167,14 +168,6 @@ a {
     transform: translate(-50%,-50%);
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-}
-
 .horizontal-text h2, .square-text h2 {
     font-size: 45px;
     margin-bottom: 20px;
@@ -198,6 +191,14 @@ a {
     left: 0%;
 }
 
+.horizontal .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
 .square {
     height: 1150px;
 }
@@ -219,8 +220,6 @@ a {
     margin-bottom: 30px;
 }
 
-
-
 /* Footer */
 footer {
     background-color: rgb(35, 39, 42);
@@ -233,32 +232,32 @@ footer {
     position: relative;
 }
 
-footer h2 {
+.container-footer h2 {
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+.container-footer .cul:first-of-type img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.container-footer .cul:first-of-type div {
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.container-footer .cul:first-of-type .fab {
+    margin: 0 10px;
+}
+
+.container-footer .cul:first-of-type .fab:first-of-type {
+    margin-left: 0;
 }
 
 .container-footer .cul:nth-of-type(2){
     padding-left: 50px;
     margin-bottom: 20px;
-}
-
-.container-footer .cul:first-child img {
-    height: 20px;
-    margin-right: 5px;
-}
-
-.container-footer .cul:first-child div {
-    line-height: 50px;
-    font-size: 25px;
-}
-
-.container-footer .cul:first-child .fab {
-    margin: 0 10px;
-}
-
-.container-footer .cul:first-child .fab:first-of-type {
-    margin-left: 0;
 }
 
 footer nav ul {
@@ -274,5 +273,4 @@ footer hr {
 footer .button {
     position: absolute;
     right: 0;
-
 }
