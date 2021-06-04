@@ -150,6 +150,7 @@ a {
 /* Main */
 .horizontal {
     height: 800px;
+    position: relative;
 }
 
 .horizontal .cul {
@@ -166,6 +167,14 @@ a {
     transform: translate(-50%,-50%);
 }
 
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
 .horizontal-text h2, .square-text h2 {
     font-size: 45px;
     margin-bottom: 20px;
@@ -176,7 +185,7 @@ a {
     font-size: 20px;
 }
 
-.horizontal img {
+.horizontal .cul img {
     height: 400px;
     position: absolute;
 
@@ -200,15 +209,17 @@ a {
     margin: 30px 0;
 }
 
-.square img {
+.square img:first-of-type {
     height: 650px;
     margin: 30px 0;
 }
 
 .square h3 {
     font-size: 25px;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
+
+
 
 /* Footer */
 footer {
