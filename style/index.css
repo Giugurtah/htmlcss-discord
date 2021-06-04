@@ -27,16 +27,9 @@ a {
 .vertical-center{
     vertical-align: middle;
 }
+
 .text-center {
     text-align: center;
-}
-
-.text-white {
-    color: white;
-}
-
-.text-black {
-    color: black;
 }
 
 .left-float {
@@ -47,11 +40,36 @@ a {
     clear: both;
 }
 
+.button {
+    display: inline-block;
+
+    border-radius: 20px;
+    line-height: 35px;
+    padding: 2px 15px;
+}
+
+/* Color property */
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
 /* Header */
 .navigazione {
     height: 80px;
     line-height: 80px;
-    background-color: rgb(55, 101, 221);
+    background-color: rgba(47, 98, 221, 1);
 }
 
 .navigazione ul {
@@ -64,11 +82,35 @@ a {
     margin: 0 10px;
 }
 
-.access-button {
-    display: inline-block;
-    height: 35;
-    width: 80px;
-    line-height: 35px;
-    background-color: white;
-    border-radius: 20px;
+.spotlight {
+    position: relative;
+    height: 550px;
+    background-image: url(../img/img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.spotlight .cul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.spotlight h1 {
+    font-size: 55px;
+    margin: 20px;
+}
+
+.spotlight p {
+    line-height: 20px;
+    margin: 20px;
+}
+
+.spotlight .button {
+    margin: 0 10px;
+}
+
+.button .fa-arrow-down {
+    margin-right: 10px;
 }
