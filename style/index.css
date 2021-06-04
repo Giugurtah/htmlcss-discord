@@ -14,10 +14,22 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* General */
+.button {
+    display: inline-block;
 
-/* Utility */
+    border-radius: 20px;
+    line-height: 35px;
+    padding: 2px 15px;
+}
+
+/* Position/dimension property*/
 .w-25 {
     width: 25vw;
+}
+
+.w-45 {
+    width: 45vw;
 }
 
 .w-50 {
@@ -28,8 +40,16 @@ a {
     width: 55vw;
 }
 
-.w-45 {
-    width: 45vw;
+.w-25p {
+    width: 25%;
+}
+
+.w-30p {
+    width: 30%;
+}
+
+.w-70p {
+    width: 70%;
 }
 
 .vertical-center{
@@ -48,14 +68,6 @@ a {
     clear: both;
 }
 
-.button {
-    display: inline-block;
-
-    border-radius: 20px;
-    line-height: 35px;
-    padding: 2px 15px;
-}
-
 /* Color property */
 .text-white {
     color: white;
@@ -63,6 +75,10 @@ a {
 
 .text-black {
     color: black;
+}
+
+.text-purple {
+    color: rgb(115, 139, 215);
 }
 
 .white {
@@ -192,4 +208,60 @@ a {
 .square h3 {
     font-size: 25px;
     margin: 30px 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(35, 39, 42);
+    padding: 70px 0;
+}
+
+.container-footer {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container-footer .cul:nth-of-type(2){
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.container-footer .cul:first-child img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.container-footer .cul:first-child div {
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.container-footer .cul:first-child .fab {
+    margin: 0 10px;
+}
+
+.container-footer .cul:first-child .fab:first-of-type {
+    margin-left: 0;
+}
+
+footer nav ul {
+    list-style: none;
+    line-height: 45px;
+}
+
+footer hr {
+    border-color: rgb(143, 162, 223);
+    margin: 20px 0;
+}
+
+footer .button {
+    position: absolute;
+    right: 0;
+
 }
